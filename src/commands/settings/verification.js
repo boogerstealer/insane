@@ -107,7 +107,7 @@ module.exports = class extends BaseCommand {
             const m = await channel.send(new Discord.MessageEmbed()
                 .setColor(0x00FF00)
                 .setAuthor(client.user.tag, client.user.displayAvatarURL({ dynamic: true }))
-                .setDescription(`This server is protected by [Unicron](${client.unicron.serverInviteURL} 'Unicron's Support Server'), a powerful bot that prevents servers from being raided, React ${await client.getEmoji('yes')} to get yourself verified!`)
+                .setDescription(`This server is protected by [Tadu](${client.unicron.serverInviteURL} 'Tadu's Support Server'), a powerful bot that prevents servers from being raided, React ${await client.getEmoji('yes')} to get yourself verified!`)
             );
             m.react(await client.getEmoji('yes'));
         }
